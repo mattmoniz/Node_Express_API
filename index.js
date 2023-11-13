@@ -8,7 +8,9 @@ const PORT = 8000;
 
 app.use(bodyParser.json());
 
-app.use('/users',usersRoutes);
+app.use("/users", usersRoutes);
+
+
 
 app.get("/", (req, res) => {
   res.send("Hello from the Homepage");
@@ -16,3 +18,4 @@ app.get("/", (req, res) => {
   app.listen(PORT, () =>
     console.log(`The Server is running on port http://localhost:${PORT}`)
   );
+
